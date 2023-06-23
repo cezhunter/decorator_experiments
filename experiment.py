@@ -20,7 +20,7 @@ def func_dict(func):
 
  
 
-def select_decorators(f, lis):
+def n(f, lis):
 
     d = func_dict(f).items()
 
@@ -110,7 +110,7 @@ def main_func(a):
 
    
 
-f = select_decorators(main_func, ['d_wrapper'])
+f = n(main_func, ['d_wrapper'])
 
 f('wow')
 
